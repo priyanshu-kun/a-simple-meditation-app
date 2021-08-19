@@ -1,6 +1,6 @@
 /* HIDE-BUTTONS.JS */
 const app = document.querySelector(".app")
-const video = document.querySelector(".video")
+const _video = document.querySelector(".video")
 
 
 const inactiveTime = 3000
@@ -14,7 +14,7 @@ document.addEventListener("mousemove",() => {
  document.body.style.cursor = "auto"
 
     app.classList.remove("inactive")
-    video.classList.remove("inactiveVideoBg")
+    _video.classList.remove("inactiveVideoBg")
 })
 
 
@@ -26,7 +26,7 @@ function deactiveApp() {
     if(deltaTime >= inactiveTime) {
         // Hide app
         app.classList.add("inactive")
-        video.classList.add("inactiveVideoBg")
+        _video.classList.add("inactiveVideoBg")
 
         // hide cursor
         document.body.style.cursor = "none"
